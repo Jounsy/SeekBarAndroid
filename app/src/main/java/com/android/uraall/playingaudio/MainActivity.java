@@ -8,12 +8,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer mediaPlayer;
-    Button button;
+    ImageView button;
     SeekBar volumeSeekBar;
     AudioManager audioManager;
 
@@ -63,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void play() {
         mediaPlayer.start();
-        button.setText("Pause");
+       // button.setText("Pause");
     }
 
     public void pause() {
         mediaPlayer.pause();
-        button.setText("Play");
+        //button.setText("Play");
     }
 }
